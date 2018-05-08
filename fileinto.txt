@@ -1,0 +1,113 @@
+total 32
+-rw-r--r--   1 wangrunji  staff     0B  5  9 00:37 fileinto.txt
+drwxrwxrwx   3 wangrunji  staff    96B  7 20  2013 风景
+drwxrwxrwx   7 wangrunji  staff   224B  7 20  2013 单词类
+drwxrwxrwx   5 wangrunji  staff   160B  5  9 00:30 图形类
+drwxrwxrwx  15 wangrunji  staff   480B  5  8 20:22 汉字类
+drwxrwxrwx   7 wangrunji  staff   224B  7 20  2013 综合类
+-rwxrwxrwx   1 wangrunji  staff   453B  3  1  2009 红绿灯.LGO
+drwxrwxrwx   6 wangrunji  staff   192B  7 20  2013 测试程序
+-rwxrwxrwx   1 wangrunji  staff   100B  7 21  2008 乘方运算.LGO
+-rwxrwxrwx   1 wangrunji  staff    15B  7 21  2008 数字位数.LGO
+-rwxrwxrwx   1 wangrunji  staff   193B  7 21  2008 阶乘运算.LGO
+
+./风景:
+total 8
+-rwxrwxrwx  1 wangrunji  staff   759B  4  3  2007 风景1.lgo
+
+./单词类:
+total 40
+-rwxrwxrwx  1 wangrunji  staff   695B 11 15  2006 apple.lgo
+-rwxrwxrwx  1 wangrunji  staff   721B 11 22  2006 banana.lgo
+-rwxrwxrwx  1 wangrunji  staff   299B 11  1  2006 cat.lgo
+-rwxrwxrwx  1 wangrunji  staff   275B 11  1  2006 dog.lgo
+-rwxrwxrwx  1 wangrunji  staff   227B 11 22  2006 hi.lgo
+
+./图形类:
+total 0
+drwxrwxrwx  12 wangrunji  staff   384B  7 20  2013 变量类
+drwxrwxrwx   9 wangrunji  staff   288B  7 20  2013 规则形状组图
+
+./图形类/变量类:
+total 80
+-rwxrwxrwx  1 wangrunji  staff   350B  2 15  2008 N个边长为N的N边形嵌套——从一点出发.LGO
+-rwxrwxrwx  1 wangrunji  staff   362B  2 16  2008 弧.LGO
+-rwxrwxrwx  1 wangrunji  staff   674B  2 16  2008 钟表.LGO
+-rwxrwxrwx  1 wangrunji  staff   330B  2 15  2008 多层花.LGO
+-rwxrwxrwx  1 wangrunji  staff   340B  2 16  2008 变色光环.LGO
+-rwxrwxrwx  1 wangrunji  staff   2.6K  2 16  2008 方阵问题.LGO
+-rwxrwxrwx  1 wangrunji  staff   435B  2 16  2008 旋转的花.LGO
+-rwxrwxrwx  1 wangrunji  staff   314B  2 16  2008 闪烁的星.LGO
+-rwxrwxrwx  1 wangrunji  staff    51B  2 15  2008 任意长度N边形.LGO
+-rwxrwxrwx  1 wangrunji  staff   130B  2 16  2008 任意奇数多角形.LGO
+
+./图形类/规则形状组图:
+total 56
+-rwxrwxrwx  1 wangrunji  staff   205B 10 25  2006 人(简).lgo
+-rwxrwxrwx  1 wangrunji  staff   259B  2 16  2008 笑.LGO
+-rwxrwxrwx  1 wangrunji  staff    65B  2 16  2008 花.LGO
+-rwxrwxrwx  1 wangrunji  staff   231B  2 16  2008 五环.LGO
+-rwxrwxrwx  1 wangrunji  staff   488B 12 27  2006 光圈.LGO
+-rwxrwxrwx  1 wangrunji  staff    65B 10 25  2006 太阳.lgo
+-rwxrwxrwx  1 wangrunji  staff   321B  5 29  2007 五星红旗.lgo
+
+./汉字类:
+total 72
+drwxrwxrwx  6 wangrunji  staff   192B  7 20  2013 名字
+drwxrwxrwx  8 wangrunji  staff   256B  7 20  2013 数字
+drwxrwxrwx  8 wangrunji  staff   256B  7 20  2013 奋斗小学
+-rwxrwxrwx  1 wangrunji  staff    94B 10 11  2006 “上”字.lgo
+-rwxrwxrwx  1 wangrunji  staff    82B 10 11  2006 “下”字.lgo
+-rwxrwxrwx  1 wangrunji  staff   286B 12 27  2006 “优”字.lgo
+-rwxrwxrwx  1 wangrunji  staff   388B 11 29  2006 “喜”字.lgo
+-rwxrwxrwx  1 wangrunji  staff    99B 10 11  2006 “回”字.lgo
+-rwxrwxrwx  1 wangrunji  staff   967B  1 17  2007 “数学”.lgo
+-rwxrwxrwx  1 wangrunji  staff    92B 10 11  2006 “米”字.lgo
+-rwxrwxrwx  1 wangrunji  staff   1.0K  3 14  2007 “四年级”.lgo
+-rwxrwxrwx  1 wangrunji  staff   1.1K  1 17  2007 “生日快乐”.lgo
+
+./汉字类/名字:
+total 32
+-rwxrwxrwx  1 wangrunji  staff   971B 11 22  2006 王润基.lgo
+-rwxrwxrwx  1 wangrunji  staff   381B 10 25  2006 “基”字.lgo
+-rwxrwxrwx  1 wangrunji  staff   367B 11 22  2006 “润”字.lgo
+-rwxrwxrwx  1 wangrunji  staff   135B 10 18  2006 “王”字.lgo
+
+./汉字类/数字:
+total 48
+-rwxrwxrwx  1 wangrunji  staff   1.5K  2 14  2008 LCD数字.LGO
+-rwxrwxrwx  1 wangrunji  staff   7.4K  5 29  2007 双色球.LGO
+-rwxrwxrwx  1 wangrunji  staff   1.1K  4 17  2007 自然数.LGO
+-rwxrwxrwx  1 wangrunji  staff   2.1K  5 15  2007 五位摇奖.LGO
+-rwxrwxrwx  1 wangrunji  staff   2.1K  4 10  2007 任意数字.lgo
+drwxrwxrwx  5 wangrunji  staff   160B  7 20  2013 任意一位数字四则运算
+
+./汉字类/数字/任意一位数字四则运算:
+total 24
+-rwxrwxrwx  1 wangrunji  staff   2.4K  4 24  2007 任意乘法.LGO
+-rwxrwxrwx  1 wangrunji  staff   2.2K  4 17  2007 任意减法.LGO
+-rwxrwxrwx  1 wangrunji  staff   2.1K  4 17  2007 任意加法.LGO
+
+./汉字类/奋斗小学:
+total 48
+-rwxrwxrwx  1 wangrunji  staff   268B 12  6  2006 “奋”字.lgo
+-rwxrwxrwx  1 wangrunji  staff   342B 12 13  2006 “学”字.lgo
+-rwxrwxrwx  1 wangrunji  staff   125B 12  6  2006 “小”字.lgo
+-rwxrwxrwx  1 wangrunji  staff   148B 12  6  2006 “斗”字.lgo
+-rwxrwxrwx  1 wangrunji  staff   957B 12 13  2006 奋斗小学.lgo
+-rwxrwxrwx  1 wangrunji  staff   1.0K 12 20  2006 奋、斗、小、学.lgo
+
+./综合类:
+total 40
+-rwxrwxrwx  1 wangrunji  staff   299B  3 21  2008 除法.LGO
+-rwxrwxrwx  1 wangrunji  staff   2.0K  2  4  2008 进度条.LGO
+-rwxrwxrwx  1 wangrunji  staff   475B  3 16  2008 股票检测.LGO
+-rwxrwxrwx  1 wangrunji  staff   3.2K  7  9  2007 饮食小票.LGO
+-rwxrwxrwx  1 wangrunji  staff   2.2K  7  3  2007 组句游戏.lgo
+
+./测试程序:
+total 32
+-rwxrwxrwx  1 wangrunji  staff   266B  3 14  2007 螺旋.lgo
+-rwxrwxrwx  1 wangrunji  staff   153B  3 14  2007 拼五角星.lgo
+-rwxrwxrwx  1 wangrunji  staff   284B  3 14  2007 正螺旋转.lgo
+-rwxrwxrwx  1 wangrunji  staff   255B  3 14  2007 螺旋放小.lgo
