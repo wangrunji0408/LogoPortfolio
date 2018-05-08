@@ -1,0 +1,27 @@
+to hldk :a :fx :zt
+pd
+seth 0 fd :a
+repeat 180 [fd :a*pi/360 lt 1]
+fd :a*2
+repeat 180 [fd :a*pi/360 lt 1]
+fd :a
+pu
+lt 90 fd :a*15/32 rt 90 fd :a*7/8
+repeat 3 [pd stampoval (:a*3/8) (:a*3/8) pu bk :a*7/8]
+fd :a*7/8
+end
+
+to fxys :a :fx :zt
+if :zt<3 then make "ys 12
+if :zt=3 then make "ys 14
+if :zt=4 then make "ys 10
+setpc :ys
+setw :a/25
+if :fx=1 then 
+pu bk :a
+end
+
+to hldd :a :fx :zt
+if :zt=1 then
+repeat 2 [pu fd :a*7/8]
+end

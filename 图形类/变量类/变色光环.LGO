@@ -1,0 +1,21 @@
+to gq
+(pr "请输入最大光圈的半径)
+make "r read
+(pr "请输入最小光圈的半径)
+make "xr read
+(pr "请输入相邻两个光圈间的半径差)
+make "c read
+pu
+lt 90 fd :xr rt 90
+ch :r :xr :c
+end
+
+to ch :r :xr :c
+if :r<:xr [stop]
+make "color random 14
+pd
+setpc :color
+repeat 18 [fd 2*:xr*pi/36 rt 10 wait 1]
+make "xr (:c+:xr)
+ch :r :xr :c
+end

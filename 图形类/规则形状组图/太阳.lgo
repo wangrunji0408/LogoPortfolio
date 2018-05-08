@@ -1,0 +1,4 @@
+to hua
+pd
+repeat 20 [repeat 4 [fd 50 rt 360/4]rt 360/20]
+end

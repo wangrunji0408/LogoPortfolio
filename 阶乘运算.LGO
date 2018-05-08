@@ -1,0 +1,14 @@
+to jiecheng
+(pr "请输入需要进行阶乘运算的数)
+make "n read
+make "x :n
+make "a :n
+jcys :n :a :x
+end
+
+to jcys :n :a :x
+if :a=1 [(pr :x) end]
+make "x (:x*(:a-1))
+jcys :n :a-1 :x
+end
+

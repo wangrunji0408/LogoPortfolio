@@ -1,0 +1,89 @@
+to x :n
+pu fd 0.1*:n pd fd 0.8*:n pu fd 0.1*:n
+end
+
+to no1 :n
+pu fd :n rt 90 fd (:n/2) rt 90
+pd x :n x :n
+pu bk :n lt 90 fd :n lt 90
+end
+
+to no2 :n
+pu fd :n rt 90 bk (:n/2)
+pd repeat 2 [x :n rt 90] repeat 2 [x :n lt 90] x :n
+pu lt 90 fd :n rt 90 fd :n lt 90
+end
+
+to no3 :n
+pu fd :n rt 90 bk (:n/2)
+repeat 2 [pd x :n rt 90 x :n pu lt 90 bk :n]
+pd x :n
+pu fd :n lt 90 fd :n
+end
+
+to no4 :n
+pu fd :n lt 90 fd (:n/2) lt 90
+pd x :n lt 90 x :n
+pu rt 90 bk :n
+pd x :n x :n
+pu bk :n lt 90 fd :n lt 90
+end
+
+to no5 :n
+pu fd :n lt 90 bk (:n/2)
+pd repeat 2 [x :n lt 90 ] repeat 2 [x :n rt 90] x :n
+pu bk (:n*2) rt 90 fd :n
+end
+
+to no6 :n
+pu fd :n lt 90 bk (:n/2)
+pd x :n lt 90 x :n repeat 4 [x :n lt 90]
+pu rt 90 bk (:n*2) rt 90
+end
+
+to no7 :n
+pu fd :n rt 90 bk (:n/2)
+pd x :n rt 90 x :n x :n
+pu bk :n lt 90 fd :n lt 90
+end
+
+to no8 :n
+pu fd :n rt 90 bk (:n/2)
+pd repeat 2 [x :n rt 90 x :n x :n rt 90]
+pu lt 90 bk :n rt 90
+pd x :n
+pu fd :n lt 90
+end
+
+to no9 :n
+pu lt 90 bk (:n/2)
+pd repeat 4 [x :n rt 90] lt 90 x :n rt 90 x :n
+pu bk (:n*2) rt 90 fd :n
+end
+
+to no0 :n
+pu fd :n rt 90 bk (:n/2)
+pd repeat 2 [x :n rt 90 x :n x :n rt 90]
+pu fd (:n*2) lt 90 bk :n
+end
+
+to lcd :n
+ht
+pu lt 90 fd (:n*1.5*10) rt 90
+shu :n
+end
+
+to shu :n
+make "s read
+if :s=1 [no1 :n]
+if :s=2 [no2 :n]
+if :s=3 [no3 :n]
+if :s=4 [no4 :n]
+if :s=5 [no5 :n]
+if :s=6 [no6 :n]
+if :s=7 [no7 :n]
+if :s=8 [no8 :n]
+if :s=9 [no9 :n]
+if :s=0 [no0 :n]
+shu :n
+end

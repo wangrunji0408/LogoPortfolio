@@ -1,0 +1,26 @@
+to wjx :a
+pu
+fd :a*1.2 rt 18 bk :a
+pd
+setpc 14
+repeat 5 [fd :a rt 144 fd :a lt 72]
+pu
+fd :a lt 18 bk :a*1.2
+pd
+fill
+end
+
+to wxhq
+pu
+bk 100 lt 90 fd 150 rt 180
+pd
+setpc 12
+(stamprect 300 200 "true)
+pu
+lt 90 fd 160 rt 90 fd 50 lt 90
+pd
+wjx 20
+pu
+rt 45
+repeat 4 [rt 40 fd 55 pd wjx 10 pu bk 50] 
+end

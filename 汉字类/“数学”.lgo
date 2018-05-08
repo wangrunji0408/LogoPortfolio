@@ -1,0 +1,84 @@
+to shu
+pu
+fd 50 lt 90 fd 50 lt 135
+pd
+fd 60
+pu
+bk 30 rt 90 fd 30
+pd
+bk 60
+pu
+fd 30 rt 135 fd 30
+pd
+bk 60
+pu
+fd 30 rt 90 fd 30
+pd
+bk 60
+pu
+fd 30 rt 90 fd 35 rt 45
+pd
+fd 40 lt 100 fd 50
+pu
+lt 130 fd 50
+pd
+repeat 10 [bk 7 rt 360/48]
+pu
+repeat 10 [lt 360/48 fd 7] lt 90 fd 50
+pd
+bk 60
+pu
+bk 20 rt 95 fd 30 rt 45
+pd
+fd 50
+pu
+bk 25 rt 45
+pd
+fd 60
+pu
+bk 20 rt 90
+pd
+repeat 12 [fd 13 rt 360/48]
+pu
+repeat 12 [lt 360/48 bk 13]rt 90 fd 30 lt 90
+pd
+repeat 4 [fd 30 lt 360/24] lt 360/24 fd 20
+end
+
+to xue
+pu
+fd 100 rt 135
+pd
+fd 20
+pu
+bk 20 lt 45 fd 20 rt 45
+pd
+fd 20
+pu
+bk 20 lt 45 fd 40 rt 135
+pd
+fd 20
+pu
+bk 20 rt 45 fd 80 lt 90 fd 20 lt 45
+pd
+fd 20
+pu
+bk 20 lt 45
+pd
+fd 90 rt 135 fd 20
+pu
+bk 20 rt 45 fd 70 lt 90 fd 10 lt 90
+pd
+fd 50 rt 135 fd 30 lt 45 fd 50 rt 135 fd 10
+pu
+bk 10 rt 45 fd 40 lt 90 fd 50
+pd
+bk 100
+end
+
+to shuxue
+pu
+lt 90 fd 150 rt 90 shu
+pu
+lt 90-360/24*5 fd 50 lt 90 xue
+end

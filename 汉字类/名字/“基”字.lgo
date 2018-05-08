@@ -1,0 +1,48 @@
+to ji
+pd
+fd 100
+pu
+bk 70 lt 90 fd 30
+pd
+bk 110
+pu
+rt 90 fd 40 lt 90 fd 110
+pd
+bk 110
+pu
+fd 60 lt 90
+pd
+fd 40
+pu
+lt 90 fd 30 lt 90
+pd
+fd 40
+pu
+rt 90 fd 30 lt 90 fd 40
+pd
+bk 120
+pu
+fd 30 rt 135
+pd
+fd 50
+pu
+bk 50 lt 135 fd 60 rt 45
+pd
+fd 50
+pu
+lt 45 bk 30
+pd
+bk 60
+pu
+fd 30 lt 90
+pd
+fd 30
+pu
+bk 30
+pd
+bk 30
+pu
+lt 90 fd 60
+pd
+bk 120
+end

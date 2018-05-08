@@ -1,0 +1,158 @@
+to no1
+pd
+rt 90 fd 80
+pu
+bk 80 lt 90 fd 20
+end
+
+to no2
+pu
+rt 90 fd 20 lt 90
+pd
+lt 90 repeat 15 [fd 5 rt 360/24] fd 50 lt 135 fd 40
+pu
+fd 20 lt 90 fd 60 rt 90
+end
+
+to no3
+pd
+repeat 12 [fd 5 rt 360/24] repeat 12 [rt 360/24 bk 5]
+pu
+fd 30 lt 90 fd 80 rt 90
+end
+
+to no4
+pu
+fd 20 rt 110
+pd
+fd 50 lt 110 fd 60
+pu
+bk 30 lt 90 fd 50
+pd
+bk 80
+pu
+rt 90 fd 50 lt 90 fd 70 rt 90
+end
+
+to no5
+pu
+fd 50
+pd
+bk 40 rt 90 fd 20 lt 90 fd 10 repeat 12 [fd 7 rt 360/24] fd 10
+pu
+bk 50 rt 90 fd 80 rt 90
+end
+
+to no6
+pu
+fd 30 rt 135
+pd
+repeat 3 [fd 25 lt 360/24] repeat 20 [fd 5 lt 360/24]
+pu
+rt 30 bk 50 rt 90 fd 40 rt 90
+end
+
+to no7
+pu
+fd 10
+pd
+fd 50 rt 120 fd 80
+pu
+lt 120 fd 50 lt 90 fd 70 rt 90 fd 20
+end
+
+to no8
+pu
+fd 30
+pd
+repeat 24 [fd 5 rt 360/24]
+pu
+repeat 12 [fd 5 rt 360/24]
+pd
+repeat 24 [fd 6 lt 360/24]
+pu
+bk 30 rt 90 fd 40 rt 90
+end
+
+to no9
+pu
+fd 30
+pd
+repeat 24 [fd 5 rt 360/24]
+pu
+repeat 7 [fd 5 rt 360/24]
+pd
+fd 60
+pu
+lt 105 fd 40 lt 90 fd 80 rt 90
+end
+
+to no0
+pu
+fd 20 rt 90 fd 20 lt 90
+pd
+repeat 24 [fd 7 rt 360/24]
+pu
+lt 90 fd 20 rt 90 fd 50
+end
+
+to yj
+pu
+make "a random 9
+make "b random 9
+make "c random 9
+make "d random 9
+make "e random 9
+fd 50 lt 90 fd 100 lt 90 lt 90
+pd
+if :a=1 then no1
+if :a=2 then no2
+if :a=3 then no3
+if :a=4 then no4
+if :a=5 then no5
+if :a=6 then no6
+if :a=7 then no7
+if :a=8 then no8
+if :a=9 then no9
+if :a=0 then no0
+if :b=1 then no1
+if :b=2 then no2
+if :b=3 then no3
+if :b=4 then no4
+if :b=5 then no5
+if :b=6 then no6
+if :b=7 then no7
+if :b=8 then no8
+if :b=9 then no9
+if :b=0 then no0
+if :c=1 then no1
+if :c=2 then no2
+if :c=3 then no3
+if :c=4 then no4
+if :c=5 then no5
+if :c=6 then no6
+if :c=7 then no7
+if :c=8 then no8
+if :c=9 then no9
+if :c=0 then no0
+if :d=1 then no1
+if :d=2 then no2
+if :d=3 then no3
+if :d=4 then no4
+if :d=5 then no5
+if :d=6 then no6
+if :d=7 then no7
+if :d=8 then no8
+if :d=9 then no9
+if :d=0 then no0
+if :e=1 then no1
+if :e=2 then no2
+if :e=3 then no3
+if :e=4 then no4
+if :e=5 then no5
+if :e=6 then no6
+if :e=7 then no7
+if :e=8 then no8
+if :e=9 then no9
+if :e=0 then no0
+end

@@ -1,0 +1,4 @@
+to nbnc :b :n
+pd
+repeat :b [fd :n rt 360/:b]
+end

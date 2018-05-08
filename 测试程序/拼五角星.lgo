@@ -1,0 +1,8 @@
+to swbx :a
+pd
+repeat 5 [repeat 4 [fd :a rt 360/4]rt 360/5]
+end
+
+to wjx
+swbx 10 swbx 20 swbx 30 swbx 30 swbx 40 swbx 50 swbx 60 swbx 70 swbx 80
+end

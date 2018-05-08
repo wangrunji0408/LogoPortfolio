@@ -1,0 +1,91 @@
+to fdxx
+cs
+pu
+fd 80 lt 90 fd 50 rt 180
+pd
+fd 100
+pu
+bk 50 lt 90 fd 30
+pd
+repeat 6 [bk 20 rt 360/24]
+pu
+repeat 6 [lt 360/24 fd 20] bk 20
+pd
+repeat 4 [bk 20 lt 360/16] bk 20
+pu
+lt 2 fd 35
+pd
+repeat 4 [fd 50 lt 90]
+pu
+lt 90 fd 25 rt 90
+pd
+fd 50
+pu
+bk 25 rt 90 fd 25
+pd
+bk 50
+wait 100
+ cs
+pu
+fd 100 lt 90 fd 50 lt 135
+pd
+fd 50
+pu
+bk 50 rt 45 fd 50 lt 45
+pd
+fd 50
+pu
+rt 45 fd 20 rt 90 fd 50
+pd
+bk 150
+pu
+fd 75 rt 90 fd 120
+pd
+bk 180
+wait 100
+ cs
+pu
+fd 50 rt 180
+pd
+fd 100 rt 135 fd 20
+pu
+rt 45 fd 40 lt 90 fd 20 lt 45
+pd
+fd 30
+pu
+bk 30 rt 45 bk 70 rt 45
+pd
+bk 30 
+wait 100
+ cs
+pu
+fd 80 lt 90 fd 30 lt 135
+pd
+fd 20
+pu
+bk 20 lt 45 fd 20 rt 45
+pd
+fd 20
+pu
+bk 20 lt 45 fd 40 rt 135
+pd
+fd 20
+pu
+bk 20 rt 45 fd 80 lt 90 fd 20 lt 45
+pd
+fd 20
+pu
+bk 20 lt 45
+pd
+fd 90 rt 135 fd 20
+pu
+bk 20 rt 45 fd 70 lt 90 fd 10 lt 90
+pd
+fd 50 rt 135 fd 30 lt 45 fd 50 rt 135 fd 10
+pu
+bk 10 rt 45 fd 40 lt 90 fd 50
+pd
+bk 100
+wait 100
+fdxx
+end

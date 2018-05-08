@@ -1,0 +1,21 @@
+to ha
+rt 90
+pd
+repeat 40 [fd 10 rt 360/40]
+pu
+rt 90 fd 50 rt 180
+pd
+repeat 12 [fd 5 lt 360/24]
+pu
+lt 90 fd 50 lt 90
+pd
+repeat 12 [fd 5 rt 360/24]
+pu
+fd 20 rt 90 fd 40 lt 90
+pd
+fd 10
+pu
+lt 90 fd 40 rt 90
+pd
+repeat 12 [fd 10 rt 360/24]
+end

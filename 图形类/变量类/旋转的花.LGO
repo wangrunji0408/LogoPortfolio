@@ -1,0 +1,27 @@
+to xzh
+(pr "请输入角的数量)
+make "s read
+(pr "请输入角的长度)
+make "jc read
+(pr "请输入分支的长度)
+make "fc read
+(pr "请输入分支的个数)
+make "f read
+make "j 0
+zhuan :f :fc :s :jc :j
+end
+
+to ljx :s :jc
+pd
+repeat :s [fd :jc rt 180-180/:s]
+end
+
+to hua :f :fc :s :jc
+repeat :f [pd fd :fc ljx :s :jc pu bk :fc rt 360/:f]
+end
+
+to zhuan :f :fc :s :jc :j
+rt :j
+hua :f :fc :s :jc wait 1 cs
+zhuan :f :fc :s :jc :j+1
+end

@@ -1,0 +1,10 @@
+to lxfx
+pd
+repeat 4 [fd 100 rt 90] rt 360/36
+repeat 4 [fd 90 rt 90] rt 360/36
+repeat 4 [fd 80 rt 90] rt 360/36
+repeat 4 [fd 70 rt 90] rt 360/36
+repeat 4 [fd 60 rt 90] rt 360/36
+repeat 4 [fd 50 rt 90] rt 360/36
+repeat 4 [fd 40 rt 90] rt 360/36
+end

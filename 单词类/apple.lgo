@@ -1,0 +1,36 @@
+to apple
+pd
+repeat 24 [fd 10 lt 360/24] repeat 6 [bk 8 lt 360/24]
+pu
+rt 90 fd 80 rt 90 fd 50
+pd
+repeat 24 [fd 10 rt 360/24]
+pu
+repeat 6 [bk 10 lt 360/24] fd 80/3 repeat 6 [bk 5 rt 360/24]
+pd
+fd 5 repeat 6 [fd 5 lt 360/24] fd 80/3
+pu
+bk 80/3
+pd
+bk 120 repeat 6 [bk 10 rt 360/24]
+pu
+fd 180 lt 90 fd 175 rt 90
+pd
+repeat 24 [fd 10 rt 360/24]
+pu
+repeat 6 [bk 10 lt 360/24] fd 80/3 repeat 6 [bk 5 rt 360/24]
+pd
+fd 5 repeat 6 [fd 5 lt 360/24] fd 80/3
+pu
+bk 80/3
+pd
+bk 120 repeat 6 [bk 10 rt 360/24]
+pu
+fd 150 lt 90 fd 180 fd 80
+pd
+bk 130 repeat 12 [bk 7 lt 360/24]
+pu
+bk 10 lt 90 fd 30
+pd
+fd 78 lt 90 repeat 18 [fd 10 lt 360/24] fd 10 repeat 3 [fd 10 lt 360/24]
+end

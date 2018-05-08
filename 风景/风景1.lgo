@@ -1,0 +1,49 @@
+to sun
+pd
+repeat 25 [fd 70 rt 180-180/25]
+end
+
+to yun :a
+pd
+repeat 2 [fd 2.5*:a rt 10]
+repeat 2 [fd 5*:a lt 20]
+repeat 3 [fd 2.5*:a rt 5]
+repeat 5 [fd 1.5*:a rt 2]
+repeat 5 [fd 1*:a rt 20]
+repeat 4 [fd 1*:a rt 15]
+repeat 4 [fd 2.5*:a lt 5]
+repeat 2 [fd 2.5*:a rt 10]
+repeat 4 [fd 1*:a lt 5]
+repeat 3 [fd 2.5*:a rt 10]
+repeat 5 [fd 3.5*:a rt 10]
+repeat 4 [fd 1*:a lt 5]
+repeat 7 [fd 2.5*:a rt 20]
+repeat 6 [fd 2.5*:a rt 10]
+lt 45
+end
+
+to fj1
+pu
+fd 100 lt 90 fd 200 lt 90
+setpc 12
+sun
+pu
+lt 90 fd 100
+setpc 8
+yun 2
+pu
+fd 100 rt 90 fd 50 lt 100
+yun 1.5
+pu
+lt 90 fd 20 rt 90 fd 150
+yun 3
+pu
+rt 90 fd 120 lt 90 bk 400 lt 30
+pd
+setpc 2
+repeat 6 [fd 50 rt 360/24] lt 90 bk 20
+pu
+fd 20
+pd
+repeat 4 [fd 50 rt 360/24]
+end

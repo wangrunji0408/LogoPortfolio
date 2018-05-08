@@ -1,0 +1,13 @@
+to zfc
+pd
+repeat 4 [fd 5 rt 360/4]
+repeat 4 [fd 10 rt 360/4]
+repeat 4 [fd 15 rt 360/4]
+repeat 4 [fd 20 rt 360/4]
+repeat 4 [fd 25 rt 360/4]
+repeat 4 [fd 30 rt 360/4]
+repeat 4 [fd 35 rt 360/4]
+repeat 4 [fd 40 rt 360/4]
+repeat 4 [fd 45 rt 360/4]
+repeat 4 [fd 50 rt 360/4]
+end

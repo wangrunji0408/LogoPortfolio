@@ -1,0 +1,3 @@
+to mi
+repeat 2[pd fd 100 pu bk 50 lt 90 fd 50 pd bk 100 pu rt 90 fd 50 lt 135 fd 20]
+end

@@ -1,0 +1,21 @@
+to cf
+(pr "请输入被除数)
+make "a read
+(pr "请输入除数)
+make "b read
+(pr "请输入电脑分辨率（x）)
+make "fx read
+(pr "请输入电脑分辨率（y）)
+make "fy read
+make "x (:fx*-0.3)
+make "xd (:fx*0.3)
+make "y (:fy*0.15)
+pu
+setx :x sety :y
+pd
+setx :xd
+pu
+setx :x
+pd
+repeat 5 [bk 5 rt 15]
+end

@@ -1,0 +1,17 @@
+to cat
+repeat 2 [fd 10 rt 360/24] rt 180
+pd
+repeat 18 [fd 10 lt 360/24]
+pu
+lt 30 fd 60 rt 90 fd 100 rt 90 fd 43 rt 180
+pd
+repeat 24 [fd 10 lt 360/24] repeat 6 [bk 8 lt 360/24]
+pu
+rt 90 fd 80 rt 90 fd 5
+pd
+fd 75
+pu
+bk 75/2 lt 90 fd 50 rt 180
+pd
+fd 110 repeat 12 [fd 5 lt 360/24]
+end

@@ -1,0 +1,24 @@
+to fen
+pd
+fd 100
+pu
+bk 50 lt 90 fd 30
+pd
+repeat 6 [bk 20 rt 360/24]
+pu
+repeat 6 [lt 360/24 fd 20] bk 20
+pd
+repeat 4 [bk 20 lt 360/16] bk 20
+pu
+lt 2 fd 35
+pd
+repeat 4 [fd 50 lt 90]
+pu
+lt 90 fd 25 rt 90
+pd
+fd 50
+pu
+bk 25 rt 90 fd 25
+pd
+bk 50
+end

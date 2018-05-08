@@ -1,0 +1,102 @@
+to wrj
+pd
+fd 500
+pu
+bk 500 lt 90 fd 150 rt 90 fd 30
+ pd
+fd 90
+pu
+bk 45 rt 90
+pd
+fd 120
+pu
+bk 60 rt 90 fd 35
+pd
+bk 70
+pu
+fd 35 lt 90 fd 60 rt 90 fd 60
+pd
+bk 120
+pu
+bk 20 rt 90 fd 150 rt 180
+ repeat 2[lt 45 pd fd 30 pu bk 30 rt 45 fd 50] fd 50 lt 150
+pd
+fd 50
+pu
+lt 30 fd 100 rt 135
+pd
+fd 30
+pu
+lt 135 fd 10 rt 90 fd 10
+pd
+fd 100 rt 90 fd 150 rt 135 fd 30
+pu
+lt 45 fd 100 rt 90
+pd
+fd 100
+pu
+bk 10 rt 90 fd 20
+pd
+fd 70
+pu
+bk 35 rt 90
+pd
+fd 80
+pu
+bk 40 rt 90 fd 25
+pd
+bk 50
+pu
+fd 25 lt 90 fd 40 rt 90 fd 40
+pd
+bk 80
+pu
+bk 70 rt 90 fd 130 rt 90
+ pd
+fd 100
+pu
+bk 70 lt 90 fd 30
+pd
+bk 110
+pu
+rt 90 fd 40 lt 90 fd 110
+pd
+bk 110
+pu
+fd 60 lt 90
+pd
+fd 40
+pu
+lt 90 fd 30 lt 90
+pd
+fd 40
+pu
+rt 90 fd 30 lt 90 fd 40
+pd
+bk 120
+pu
+fd 30 rt 135
+pd
+fd 50
+pu
+bk 50 lt 135 fd 60 rt 45
+pd
+fd 50
+pu
+lt 45 bk 30
+pd
+bk 60
+pu
+fd 30 lt 90
+pd
+fd 30
+pu
+bk 30
+pd
+bk 30
+pu
+lt 90 fd 60
+pd
+bk 120
+end
+

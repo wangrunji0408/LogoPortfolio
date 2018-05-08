@@ -1,0 +1,20 @@
+to dbx
+(pr "请输入形状的边数)
+make "b read
+(pr "请输入第一个形状的边长)
+make "a read
+(pr "请输入形状的数量)
+make "n read
+(pr "请输入每两个相邻形状的边长差)
+make "c read
+make "xn 0
+hua :b :a :n :c :xn
+end
+
+to hua :b :a :n :c :xn
+if :xn=:n [stop]
+repeat :b [fd :a rt 360/:b]
+make "a (:a+:c)
+make "xn (:xn+1)
+hua :b :a :n :c :xn
+end

@@ -1,0 +1,35 @@
+to biaopan
+pd
+setpc 0
+stampoval 100 100
+setpc 12 setw 3
+repeat 12 [pu fd 95 pd fd 5 pu bk 100 rt 360/12]
+setpc 13 setw 2
+repeat 60 [pu fd 98 pd fd 2 pu bk 100 rt 360/60]
+pd
+setpc 12 stampoval 5 5
+ask 0 [ht]
+end
+
+to shijian :a :b :c
+ask 1 [pd setpc 0 setw 1 seth :c*(360/60) fd 80]
+ask 2 [pd setpc 0 setw 2 seth (:b+:c/60)*(360/60) fd 50]
+ask 3 [pd setpc 0 setw 3 seth (:a+:b/60+:c/3600)*(360/12) fd 30]
+wait 105
+ask 1 [pe bk 80]
+ask 2 [pe bk 50]
+ask 3 [pe bk 30]
+if :c>59 then make "c 0
+if :c>59 then :b+1
+if :b>59 then make "b 0
+if :b>59 then :a+1
+shijian :a :b :c+1
+end
+
+to clock :a :b :c
+pd
+biaopan
+pd
+shijian :a :b :c
+clock :a :b :c
+end

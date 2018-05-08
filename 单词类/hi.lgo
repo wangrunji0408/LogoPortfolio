@@ -1,0 +1,24 @@
+to hi
+pd
+fd 160
+pu
+bk 80 lt 90
+pd
+fd 80 lt 90
+pu
+fd 80
+pd
+bk 160
+pu
+rt 90 fd 50 lt 90 fd 70 rt 90
+pd
+repeat 6 [fd 7 lt 360/24]
+pu
+fd 20 lt 45 fd 5
+pd
+bk 10
+pu
+fd 5 lt 135 fd 20
+pd
+fd 90 lt 135 fd 30
+end

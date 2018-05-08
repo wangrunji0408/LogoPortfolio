@@ -1,0 +1,16 @@
+to wang
+pd
+fd 90
+pu
+bk 45 rt 90
+pd
+fd 120
+pu
+bk 60 rt 90 fd 35
+pd
+bk 70
+pu
+fd 35 lt 90 fd 60 rt 90 fd 60
+pd
+bk 120
+end

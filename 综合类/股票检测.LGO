@@ -1,0 +1,24 @@
+to kuang :zj
+tellall 0 6
+each [pu ht setxy [-400 -150]]
+ask 1 [pd setx 400]
+ask 2 [pd sety 150]
+ask 3 [pd repeat 50 [pu fd 300/50 rt 90 pd fd 5 pu bk 5 lt 90]]
+ask 4 [pu rt 90 fd 5 repeat 100 [pu fd (800-5)/100 lt 90 pd fd 5 pu bk 5 rt 90]]
+setx -450
+xn :zj 0
+end
+
+to xn :zj :c
+repeat 5 [pd tt (:zj*:c) pu fd 50 make "c (:c+1)]
+end
+
+to gp
+(pr "请输入购买股票的只数)
+make "z read
+(pr "请输入购买股票的原价)
+make "d read
+make "zj (:z*:d)
+kuang :zj
+bh
+end

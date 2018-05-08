@@ -1,0 +1,8 @@
+to hui
+pd
+repeat 4 [fd 100 rt 90]
+pu
+fd 25 rt 90 fd 25 lt 90
+pd
+repeat 4 [fd 50 rt 90]
+end

@@ -1,0 +1,66 @@
+to fz 
+draw
+(pr "请指示操作。输入1，实心方阵；输入2，空心方阵；输入3，解决问题)
+make "a read
+if :a=3 then wt
+(pr "请输入最外层点数)
+make "b read
+(pr "请输入方阵边长)
+make "d read/(:b-1)
+if :a=1 then zs :b :d
+if :a=2 then zk :b :d
+end
+
+to zs :b :d
+pu
+fd (:d*3)*(:b/2) lt 90 fd (:d*3)*(:b/2)
+pd
+repeat :b [repeat :b [pd stampoval :d :d pu bk :d*3]pu fd :d*3*:b lt 90 fd :d*3 rt 90]
+(pr "最外边： :b  "点 )
+(pr "最外层： (:b-1)*4  "点 )
+(pr "总共： :b*:b  "点 )
+wait 300
+(pr "是否进行通层测试？（Y或N）)
+make "p read
+if :p="y then (pr "请输入从最外层开始要查询的层数。) make "r read (pr "第 :r "层： ((:b-1)*4)-((:r-1)*8)  "点 )
+(pr "是否进行通边测试？（Y或N）)
+make "p read
+if :p="y then (pr "请输入从最外层开始要查询层数的的边数。) make "r read (pr "第 :r "层的边数： :b-(:r-1)*2  "点 )
+end
+to zk :b :d
+(pr "请输入层数。) make "c read
+pu
+fd (:d*3)*(:b/2) lt 90 fd (:d*3)*(:b/2)
+pd
+repeat :c [repeat :b [pd stampoval :d :d pu bk :d*3]pu fd :d*3*:b lt 90 fd :d*3 rt 90]
+repeat (:b-:c*2) [repeat :c [pd stampoval :d :d pu bk :d*3] bk :d*3*(:b-:c*2) repeat :c [pd stampoval :d :d pu bk :d*3] pu fd :d*3*:b lt 90 fd :d*3 rt 90]
+repeat :c [repeat :b [pd stampoval :d :d pu bk :d*3]pu fd :d*3*:b lt 90 fd :d*3 rt 90]
+(pr "最外边： :b  "点 )
+(pr "最外层： (:b-1)*4  "点 )
+(pr "总共： (:b-:c)*:c*4  "点 )
+wait 300
+(pr "是否进行通层测试？（Y或N）)
+make "p read
+if :p="y then (pr "请输入从最外层开始要查询的层数。) make "r read (pr "第 :r "层： ((:b-1)*4)-((:r-1)*8)  "点 )
+(pr "是否进行通边测试？（Y或N）)
+make "p read
+if :p="y then (pr "请输入从最外层开始要查询层数的的边数。) make "r read (pr "第 :r "层的边数： :b-(:r-1)*2  "点 )
+end
+
+to wt
+(pr "请选择问题类型)
+(pr 1 "知边，求层)
+(pr 2 "知层，求边)
+(pr 3 "知最外边，求总数)
+(pr 4 "知最外边、层数，求总数)
+(pr 5 "知总数、层数，求最外边)
+(pr 6 "知最外层，求最内层)
+(pr 7 "知最内层，求最外层)
+if read=1 then (pr "请输入边数量) make "1a read (pr "层数量： (:1a-1)*4 "个)
+if read=2 then (pr "请输入层数量) make "2a read (pr "边数量： (:2a/4+1) "个)
+if read=3 then (pr "请输入最外边数量) make "3a read (pr "总数量： (:3a*:3a) "个)
+if read=4 then (pr "请输入最外边数量) make "4a read (pr "请输入层数) make "4b read (pr "总数量： ((:4a-:4b)*:4b*4) "个)
+if read=5 then (pr "请输入总数量) make "5a read (pr "请输入层数) make "5b read (pr "最外边数量： (:5a/4/:5b+:5b) "个)
+if read=6 then (pr "请输入最外层数量) make "6a read (pr "请输入层数) make "6b read (pr "最内层数量： (:6a+(:6b-1)*8) "个)
+if read=7 then (pr "请输入最内层数量) make "7a read (pr "请输入层数) make "7b read (pr "最外层数量： (:7a+(:7b-1)*8) "个)
+end

@@ -1,0 +1,391 @@
+to no1
+pd
+rt 90 fd 80
+pu
+bk 80 lt 90 fd 20
+end
+
+to no2
+pu
+rt 90 fd 20 lt 90
+pd
+lt 90 repeat 15 [fd 5 rt 360/24] fd 50 lt 135 fd 40
+pu
+fd 20 lt 90 fd 60 rt 90
+end
+
+to no3
+pd
+repeat 12 [fd 5 rt 360/24] repeat 12 [rt 360/24 bk 5]
+pu
+fd 30 lt 90 fd 80 rt 90
+end
+
+to no4
+pu
+fd 20 rt 110
+pd
+fd 50 lt 110 fd 60
+pu
+bk 30 lt 90 fd 50
+pd
+bk 80
+pu
+rt 90 fd 50 lt 90 fd 70 rt 90
+end
+
+to no5
+pu
+fd 50
+pd
+bk 40 rt 90 fd 20 lt 90 fd 10 repeat 12 [fd 7 rt 360/24] fd 10
+pu
+bk 50 rt 90 fd 80 rt 90
+end
+
+to no6
+pu
+fd 30 rt 135
+pd
+repeat 3 [fd 25 lt 360/24] repeat 20 [fd 5 lt 360/24]
+pu
+rt 30 bk 50 rt 90 fd 40 rt 90
+end
+
+to no7
+pu
+fd 10
+pd
+fd 50 rt 120 fd 80
+pu
+lt 120 fd 50 lt 90 fd 70 rt 90 fd 20
+end
+
+to no8
+pu
+fd 30
+pd
+repeat 24 [fd 5 rt 360/24]
+pu
+repeat 12 [fd 5 rt 360/24]
+pd
+repeat 24 [fd 6 lt 360/24]
+pu
+bk 30 rt 90 fd 40 rt 90
+end
+
+to no9
+pu
+fd 30
+pd
+repeat 24 [fd 5 rt 360/24]
+pu
+repeat 7 [fd 5 rt 360/24]
+pd
+fd 60
+pu
+lt 105 fd 40 lt 90 fd 80 rt 90
+end
+
+to no0
+pu
+fd 20 rt 90 fd 20 lt 90
+pd
+repeat 24 [fd 7 rt 360/24]
+pu
+lt 90 fd 20 rt 90 fd 50
+end
+
+to ssq
+pu
+make "a 1+random 36-1
+make "b 1+random 36-1
+make "c 1+random 36-1
+make "d 1+random 36-1
+make "e 1+random 36-1
+make "f 1+random 36-1
+make "g 1+random 36-1
+make "h 1+random 16-1
+fd 50 lt 90 fd 300 lt 180
+if :a=:b=:c=:d=:e=:f=:g=:h then ssq
+xs :a :b :c :d :e :f :g :h
+end
+
+to xs :a :b :c :d :e :f :g :h
+pd
+if :a=1 then no0 no1
+if :a=2 then no0 no2
+if :a=3 then no0 no3
+if :a=4 then no0 no4
+if :a=5 then no0 no5
+if :a=6 then no0 no6
+if :a=7 then no0 no7
+if :a=8 then no0 no8
+if :a=9 then no0 no9
+if :a=10 then no1 no0
+if :a=11 then no1 no1
+if :a=12 then no1 no2
+if :a=13 then no1 no3
+if :a=14 then no1 no4
+if :a=15 then no1 no5
+if :a=16 then no1 no6
+if :a=17 then no1 no7
+if :a=18 then no1 no8
+if :a=19 then no1 no9
+if :a=20 then no2 no0
+if :a=21 then no2 no1
+if :a=22 then no2 no2
+if :a=23 then no2 no3
+if :a=24 then no2 no4
+if :a=25 then no2 no5
+if :a=26 then no2 no6
+if :a=27 then no2 no7
+if :a=28 then no2 no8
+if :a=29 then no2 no9
+if :a=30 then no3 no0
+if :a=31 then no3 no1
+if :a=32 then no3 no2
+if :a=33 then no3 no3
+if :a=34 then no3 no4
+if :a=35 then no3 no5
+if :a=36 then no3 no6
+
+if :b=1 then no0 no1
+if :b=2 then no0 no2
+if :b=3 then no0 no3
+if :b=4 then no0 no4
+if :b=5 then no0 no5
+if :b=6 then no0 no6
+if :b=7 then no0 no7
+if :b=8 then no0 no8
+if :b=9 then no0 no9
+if :b=10 then no1 no0
+if :b=11 then no1 no1
+if :b=12 then no1 no2
+if :b=13 then no1 no3
+if :b=14 then no1 no4
+if :b=15 then no1 no5
+if :b=16 then no1 no6
+if :b=17 then no1 no7
+if :b=18 then no1 no8
+if :b=19 then no1 no9
+if :b=20 then no2 no0
+if :b=21 then no2 no1
+if :b=22 then no2 no2
+if :b=23 then no2 no3
+if :b=24 then no2 no4
+if :b=25 then no2 no5
+if :b=26 then no2 no6
+if :b=27 then no2 no7
+if :b=28 then no2 no8
+if :b=29 then no2 no9
+if :b=30 then no3 no0
+if :b=31 then no3 no1
+if :b=32 then no3 no2
+if :b=33 then no3 no3
+if :b=34 then no3 no4
+if :b=35 then no3 no5
+if :b=36 then no3 no6
+
+if :c=1 then no0 no1
+if :c=2 then no0 no2
+if :c=3 then no0 no3
+if :c=4 then no0 no4
+if :c=5 then no0 no5
+if :c=6 then no0 no6
+if :c=7 then no0 no7
+if :c=8 then no0 no8
+if :c=9 then no0 no9
+if :c=10 then no1 no0
+if :c=11 then no1 no1
+if :c=12 then no1 no2
+if :c=13 then no1 no3
+if :c=14 then no1 no4
+if :c=15 then no1 no5
+if :c=16 then no1 no6
+if :c=17 then no1 no7
+if :c=18 then no1 no8
+if :c=19 then no1 no9
+if :c=20 then no2 no0
+if :c=21 then no2 no1
+if :c=22 then no2 no2
+if :c=23 then no2 no3
+if :c=24 then no2 no4
+if :c=25 then no2 no5
+if :c=26 then no2 no6
+if :c=27 then no2 no7
+if :c=28 then no2 no8
+if :c=29 then no2 no9
+if :c=30 then no3 no0
+if :c=31 then no3 no1
+if :c=32 then no3 no2
+if :c=33 then no3 no3
+if :c=34 then no3 no4
+if :c=35 then no3 no5
+if :c=36 then no3 no6
+
+if :d=1 then no0 no1
+if :d=2 then no0 no2
+if :d=3 then no0 no3
+if :d=4 then no0 no4
+if :d=5 then no0 no5
+if :d=6 then no0 no6
+if :d=7 then no0 no7
+if :d=8 then no0 no8
+if :d=9 then no0 no9
+if :d=10 then no1 no0
+if :d=11 then no1 no1
+if :d=12 then no1 no2
+if :d=13 then no1 no3
+if :d=14 then no1 no4
+if :d=15 then no1 no5
+if :d=16 then no1 no6
+if :d=17 then no1 no7
+if :d=18 then no1 no8
+if :d=19 then no1 no9
+if :d=20 then no2 no0
+if :d=21 then no2 no1
+if :d=22 then no2 no2
+if :d=23 then no2 no3
+if :d=24 then no2 no4
+if :d=25 then no2 no5
+if :d=26 then no2 no6
+if :d=27 then no2 no7
+if :d=28 then no2 no8
+if :d=29 then no2 no9
+if :d=30 then no3 no0
+if :d=31 then no3 no1
+if :d=32 then no3 no2
+if :d=33 then no3 no3
+if :d=34 then no3 no4
+if :d=35 then no3 no5
+if :d=36 then no3 no6
+
+if :e=1 then no0 no1
+if :e=2 then no0 no2
+if :e=3 then no0 no3
+if :e=4 then no0 no4
+if :e=5 then no0 no5
+if :e=6 then no0 no6
+if :e=7 then no0 no7
+if :e=8 then no0 no8
+if :e=9 then no0 no9
+if :e=10 then no1 no0
+if :e=11 then no1 no1
+if :e=12 then no1 no2
+if :e=13 then no1 no3
+if :e=14 then no1 no4
+if :e=15 then no1 no5
+if :e=16 then no1 no6
+if :e=17 then no1 no7
+if :e=18 then no1 no8
+if :e=19 then no1 no9
+if :e=20 then no2 no0
+if :e=21 then no2 no1
+if :e=22 then no2 no2
+if :e=23 then no2 no3
+if :e=24 then no2 no4
+if :e=25 then no2 no5
+if :e=26 then no2 no6
+if :e=27 then no2 no7
+if :e=28 then no2 no8
+if :e=29 then no2 no9
+if :e=30 then no3 no0
+if :e=31 then no3 no1
+if :e=32 then no3 no2
+if :e=33 then no3 no3
+if :e=34 then no3 no4
+if :e=35 then no3 no5
+if :e=36 then no3 no6
+
+if :f=1 then no0 no1
+if :f=2 then no0 no2
+if :f=3 then no0 no3
+if :f=4 then no0 no4
+if :f=5 then no0 no5
+if :f=6 then no0 no6
+if :f=7 then no0 no7
+if :f=8 then no0 no8
+if :f=9 then no0 no9
+if :f=10 then no1 no0
+if :f=11 then no1 no1
+if :f=12 then no1 no2
+if :f=13 then no1 no3
+if :f=14 then no1 no4
+if :f=15 then no1 no5
+if :f=16 then no1 no6
+if :f=17 then no1 no7
+if :f=18 then no1 no8
+if :f=19 then no1 no9
+if :f=20 then no2 no0
+if :f=21 then no2 no1
+if :f=22 then no2 no2
+if :f=23 then no2 no3
+if :f=24 then no2 no4
+if :f=25 then no2 no5
+if :f=26 then no2 no6
+if :f=27 then no2 no7
+if :f=28 then no2 no8
+if :f=29 then no2 no9
+if :f=30 then no3 no0
+if :f=31 then no3 no1
+if :f=32 then no3 no2
+if :f=33 then no3 no3
+if :f=34 then no3 no4
+if :f=35 then no3 no5
+if :f=36 then no3 no6
+
+if :g=1 then no0 no1
+if :g=2 then no0 no2
+if :g=3 then no0 no3
+if :g=4 then no0 no4
+if :g=5 then no0 no5
+if :g=6 then no0 no6
+if :g=7 then no0 no7
+if :g=8 then no0 no8
+if :g=9 then no0 no9
+if :g=10 then no1 no0
+if :g=11 then no1 no1
+if :g=12 then no1 no2
+if :g=13 then no1 no3
+if :g=14 then no1 no4
+if :g=15 then no1 no5
+if :g=16 then no1 no6
+if :g=17 then no1 no7
+if :g=18 then no1 no8
+if :g=19 then no1 no9
+if :g=20 then no2 no0
+if :g=21 then no2 no1
+if :g=22 then no2 no2
+if :g=23 then no2 no3
+if :g=24 then no2 no4
+if :g=25 then no2 no5
+if :g=26 then no2 no6
+if :g=27 then no2 no7
+if :g=28 then no2 no8
+if :g=29 then no2 no9
+if :g=30 then no3 no0
+if :g=31 then no3 no1
+if :g=32 then no3 no2
+if :g=33 then no3 no3
+if :g=34 then no3 no4
+if :g=35 then no3 no5
+if :g=36 then no3 no6
+
+if :h=1 then no0 no1
+if :h=2 then no0 no2
+if :h=3 then no0 no3
+if :h=4 then no0 no4
+if :h=5 then no0 no5
+if :h=6 then no0 no6
+if :h=7 then no0 no7
+if :h=8 then no0 no8
+if :h=9 then no0 no9
+if :h=10 then no1 no0
+if :h=11 then no1 no1
+if :h=12 then no1 no2
+if :h=13 then no1 no3
+if :h=14 then no1 no4
+if :h=15 then no1 no5
+if :h=16 then no1 no6
+end

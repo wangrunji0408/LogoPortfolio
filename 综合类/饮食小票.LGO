@@ -1,0 +1,225 @@
+to ysxp
+make "begindate date
+make "begintime time
+(pr "饮食地点名称)
+make "mc read
+(pr "餐桌号)
+make "czh read
+(pr "收款员编号)
+make "sky read
+(pr "人数)
+make "rs read
+(pr "现在开始进餐（计时）)
+eatwait
+end
+
+to eatwait
+wait 1
+if read="停止 then (make "enddate date) (make "endtime time)
+if read="继续设置 then jqxx :mc :czh :sky :rs :begintime :begindate :endtime :enddate
+eatwait
+end
+
+to jqxx :mc :czh :sky :rs :begintime :begindate :endtime :enddate
+(pr "折扣（%，百分百为不折扣）)
+make "zhe read/100
+(pr "减价（以元为单位）)
+make "jian read
+(pr "是否有消费卡)
+if read="y then (pr "消费卡折扣概率（%，100%为不折扣）) make "zhe :zhe*(read/100)
+(pr "基本情况设置完毕,5秒后开始打印小票)
+wait 500
+xiaopiao :mc :czh :sky :rs :zhe :jian :begintime :begindate :endtime :enddate
+end
+
+to xiaopiao :mc :czh :sky :rs :zhe :jian :begintime :begindate :endtime :enddate
+pu
+bk 150 rt 90 bk 150 lt 90
+pd
+stamprect 300 300
+pu
+fd 290 rt 90 fd 20 lt 90
+pd
+setfont "TIMES 12 1
+tt (:mc)
+pu
+bk 20 rt 90 fd 80
+pd
+setfont "TIMES 10 2
+tt [欢迎您的到来！]
+pu
+bk 80 lt 90 bk 20
+pd
+setfont "TIMES 8 0
+tt [座位号：]
+pu
+rt 90 fd 40
+pd
+setfont "TIMES 10 3
+tt (:czh)
+pu
+fd 30
+pd
+setfont "TIMES 8 0
+tt [收款员：]
+pu
+fd 40
+pd
+setfont "TIMES 10 3
+tt (:sky)
+pu
+fd 30
+pd
+setfont "TIMES 8 0
+tt [用餐人数：]
+pu
+fd 50
+pd
+setfont "TIMES 10 3
+tt (:rs)
+pu
+bk 190 lt 90 bk 20
+pd
+setfont "TIMES 8 0
+tt [开始时间：]
+pu
+rt 90 fd 50
+pd
+setfont "TIMES 10 3
+tt (:begindate)
+pu
+fd 80
+pd
+tt (:begintime)
+pu
+bk 130 lt 90 bk 20
+pd
+setfont "TIMES 8 0
+tt [结束时间：]
+pu
+rt 90 fd 50
+pd
+setfont "TIMES 10 3
+tt (:enddate)
+pu
+fd 80
+pd
+tt (:endtime)
+pu
+bk 130 lt 90 bk 20 rt 90
+pd
+fd 260
+pu
+bk 260 rt 90 fd 5 lt 90 fd 20
+pd
+setfont "TIMES 8 0
+tt [名称]
+pu
+fd 50
+pd
+tt [规格]
+pu
+fd 30
+pd
+tt [数量]
+pu
+fd 50
+pd
+tt [单价]
+pu
+fd 50 
+pd
+tt [小计]
+pu
+bk 200 lt 90 bk 20 rt 90
+jincan 1 :zhe :jian
+end
+
+to jincan :caishu :zhe :jian
+if :caishu>10 then (pr "请换下一张小票打印)
+(pr "请输入第 :caishu "道菜的信息（名称）)
+make "mc read
+(pr "请输入第 :caishu "道菜的信息（规格）)
+make "gg read
+(pr "请输入第 :caishu "道菜的信息（数量）)
+make "sl read
+(pr "请输入第 :caishu "道菜的信息（单价）)
+make "dj read
+make "xj :dj*:sl
+pd
+setfont "TIMES 10 1
+tt (:mc)
+pu
+fd 70
+pd
+tt (:gg)
+pu
+fd 40
+pd
+tt (:sl)
+pu
+fd 40
+pd
+tt (:dj)
+pu
+fd 50
+pd
+tt (:xj)
+pu
+bk 200 lt 90 bk 20 rt 90
+if :caishu=1 then make "zj :xj
+if :caishu>1 then make "zj (:zj+:xj)
+make "jczt read
+if :jczt="完毕 then xinxi :zj :zhe :jian
+make "caishu (:caishu+1)
+jincan :caishu :zhe :jian
+end
+
+to xinxi :zj :zhe :jian
+pu
+bk 10
+pd
+fd 270
+pu
+bk 260 rt 90 fd 10 lt 90
+pd
+setfont "TIMES 8 0
+tt [总价（不含优惠）：]
+pu
+fd 90
+pd
+setfont "TIMES 10 1
+tt (:zj "元)
+pu
+bk 90 rt 90 fd 20 lt 90
+pd
+setfont "TIMES 8 0
+tt [应付金额（含优惠）：]
+pu
+fd 100
+pd
+make "yf :zj*:zhe-:jian
+setfont "TIMES 10 1
+tt (:yf "元)
+pu
+bk 100 rt 90 fd 20 lt 90
+pd
+setfont "TIMES 8 0
+tt [付款金额：]
+pu
+fd 50
+pd
+make "fq read
+setfont "TIMES 10 1
+tt (:fq)
+pu
+bk 50 rt 90 fd 20 lt 90
+pd
+setfont "TIMES 8 0
+tt [现金找零：]
+pu
+fd 50
+pd
+setfont "TIMES 10 1
+tt (:fq-:yf "元)
+end

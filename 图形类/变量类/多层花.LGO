@@ -1,0 +1,21 @@
+to wjx :b
+pd
+repeat 5 [fd :b rt 180-180/5]
+END
+
+to fz :c :b :j
+pu fd :b
+repeat :c [pd wjx :b pu fd (:j+:b)]
+end
+
+to hua
+(pr "请输入层数)
+make "c read
+(pr "请输入分支数)
+make "f read
+(pr "请输入层间的距离)
+make "j read
+(pr "请输入五角星的边长)
+make "b read
+repeat :f [fz :c :b :j bk :c*(:j+:b)+:b rt 360/:f]
+end

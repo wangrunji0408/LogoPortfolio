@@ -1,0 +1,13 @@
+to luoxuan
+pd
+repeat 2 [fd 100 rt 90]
+repeat 2 [fd 90 rt 90]
+repeat 2 [fd 80 rt 90]
+repeat 2 [fd 70 rt 90]
+repeat 2 [fd 60 rt 90]
+repeat 2 [fd 50 rt 90]
+repeat 2 [fd 40 rt 90]
+repeat 2 [fd 30 rt 90]
+repeat 2 [fd 20 rt 90]
+repeat 2 [fd 10 rt 90] fd 10
+end

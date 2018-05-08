@@ -1,0 +1,24 @@
+to ren
+pd
+repeat 36 [fd 7 rt 10]
+pu
+fd 4 rt 90 fd 80
+pd
+fd 100
+pu
+bk 60 lt 45
+pd
+fd 50
+pu
+bk 50 rt 45+45
+pd
+fd 50
+pu
+bk 50 lt 45 fd 60 lt 45
+pd
+fd 75
+pu
+bk 75 rt 45+45
+pd
+fd 75
+end

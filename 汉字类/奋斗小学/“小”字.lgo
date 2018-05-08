@@ -1,0 +1,12 @@
+to xiao
+pd
+fd 100 rt 135 fd 20
+pu
+rt 45 fd 40 lt 90 fd 20 lt 45
+pd
+fd 30
+pu
+bk 30 rt 45 bk 70 rt 45
+pd
+bk 30
+end

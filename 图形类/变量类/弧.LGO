@@ -1,0 +1,14 @@
+to hu
+(pr "请输入弧的度数)
+make "d read
+(pr "请输入弧距离圆心的距离)
+make "r read
+(pr "请输入弧开始时的方向度数)
+make "seth read
+pd
+ask 0 [ht setpc 12 (stampoval 2 2 "true)]
+ask 1 [seth :seth setpc 7 fd :r]
+ask 2 [seth (:seth+:d) setpc 7 fd :r]
+ask 3 [pu seth :seth fd :r rt 90 pd repeat :d [fd 2*:r*pi/360 rt 1]]
+ask 4 [seth :seth tt (:d °)]
+end

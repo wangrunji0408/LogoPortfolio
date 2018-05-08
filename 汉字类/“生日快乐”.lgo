@@ -1,0 +1,107 @@
+to sheng
+pu
+fd 50 lt 90 fd 50 lt 45
+pd
+fd 50
+pu
+bk 25 lt 135
+pd
+fd 100
+pu
+bk 50 lt 90 fd 20 rt 180
+pd
+fd 120
+pu
+bk 50 rt 90
+pd 
+fd 40
+pu
+bk 40
+pd
+bk 40
+pu
+fd 40 lt 90 fd 50 rt 90 fd 60
+pd
+bk 120
+end
+
+to ri
+pd
+rt 10
+repeat 20 [repeat 4 [fd 50 rt 360/4]rt 360/20]
+lt 10
+pu
+fd 40 rt 90
+pd
+fd 30 rt 90 fd 80 rt 90 fd 60 rt 90 fd 80 rt 90 fd 30
+pu
+rt 90 fd 40 rt 90 bk 30
+pd
+fd 60
+end
+
+to kuai
+pu
+fd 10 lt 90 fd 30 lt 60
+pd
+fd 30
+pu
+bk 30 rt 60 bk 30 rt 90 fd 20 rt 140
+pd
+fd 30
+pu
+bk 30 rt 40 fd 20 rt 90 fd 15 rt 90 fd 40
+pd
+bk 130
+pu
+rt 90 fd 50 lt 90 fd 100 rt 90
+pd
+fd 50 rt 90 fd 30
+pu
+lt 90 fd 20
+pd
+bk 90
+pu
+fd 45 lt 90 fd 50
+pd
+bk 50 repeat 6 [bk 16 rt 360/24]
+pu
+lt 360/24 repeat 6 [fd 16 lt 360/24] rt 360/24
+pd
+repeat 6 [bk 18 lt 360/24]
+end
+
+to le
+pu
+fd 50 rt 90 fd 50
+pd
+bk 80 rt 90 fd 40 lt 90 fd 110
+pu
+bk 55 lt 90 fd 20
+pd
+bk 100 lt 45 fd 20
+pu
+rt 45 fd 50 lt 90 fd 30 lt 45
+pd
+fd 30
+pu
+bk 30 rt 45 bk 65 rt 45
+pd
+bk 30
+end
+
+to srkl
+cs
+sheng
+wait 100
+cs
+ri
+wait 100
+cs
+kuai
+wait 100
+cs
+le
+wait 100
+srkl
+end

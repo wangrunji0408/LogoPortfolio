@@ -1,0 +1,13 @@
+to xia
+pd
+fd 100
+pu
+bk 50 rt 90
+pd
+fd 90
+pu
+bk 60
+lt 45
+pd
+fd 30
+end

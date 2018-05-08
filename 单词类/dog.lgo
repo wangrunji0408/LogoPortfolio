@@ -1,0 +1,20 @@
+to dog
+pd
+repeat 24 [fd 10 lt 360/24] fd 120
+pu
+bk 120
+pd
+repeat 6 [bk 8 lt 360/24]
+pu
+rt 90 fd 75 rt 90 fd 50
+pd
+repeat 24 [fd 10 rt 360/24]
+pu
+fd 100
+pd
+repeat 24 [fd 10 rt 360/24]
+pu
+repeat 6 [fd 10 rt 360/24]
+pd
+fd 100 repeat 12 [fd 10 rt 360/24]
+end

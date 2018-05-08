@@ -1,0 +1,28 @@
+to you
+pd
+lt 45 fd 70
+pu
+bk 35 lt 45
+pd
+fd 100
+pu
+lt 90 fd 30 lt 90 fd 100 rt 90 
+pd
+fd 100
+pu
+bk 50 lt 90
+pd
+fd 20
+pu
+bk 20
+pd
+repeat 6 [bk 20 rt 360/24]
+pu
+repeat 6 [lt 360/24 fd 20]
+pd
+bk 80 rt 90 fd 100 lt 90 fd 20
+pu
+fd 100 lt 90 fd 20 rt 45
+pd
+fd 30
+end

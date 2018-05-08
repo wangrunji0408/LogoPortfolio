@@ -1,0 +1,87 @@
+to zjyx
+(pr "请先设置词语（先输入词语代表的内容（四个词语，每个代表三词），再输入词语）)
+wait 100
+(pr "第一词—1—代表)
+make "1d read
+(pr "第一词—1—词语)
+make "11c read
+(pr "第一词—2—词语)
+make "12c read
+(pr "第一词—3—词语)
+make "13c read
+
+(pr "第二词—1—代表)
+make "2d read
+(pr "第二词—1—词语)
+make "21c read
+(pr "第二词—2—词语)
+make "22c read
+(pr "第二词—3—词语)
+make "23c read
+
+(pr "第三词—1—代表)
+make "3d read
+(pr "第三词—1—词语)
+make "31c read
+(pr "第三词—2—词语)
+make "32c read
+(pr "第三词—3—词语)
+make "33c read
+
+(pr "第四词—1—代表)
+make "4d read
+(pr "第四词—1—词语)
+make "41c read
+(pr "第四词—2—词语)
+make "42c read
+(pr "第四词—3—词语)
+make "43c read
+(pr "请选择选择方式（选择或机选）)
+make "fs read
+if :fs="选择 then xz :1d :11c :12c :13c :2d :21c :22c :23c :3d :31c :32c :33c :4d :41c :42c :43c
+if :fs="机选 then jx :1d :11c :12c :13c :2d :21c :22c :23c :3d :31c :32c :33c :4d :41c :42c :43c
+end
+
+to xz :1d :11c :12c :13c :2d :21c :22c :23c :3d :31c :32c :33c :4d :41c :42c :43c
+(pr "请选择 :1d "：选择（1）、（2）、（3）)
+make "sz read
+if :sz=1 then make "sz1 :11c
+if :sz=2 then make "sz1 :12c
+if :sz=3 then make "sz1 :13c 
+(pr "请选择 :2d "：选择（1）、（2）、（3）)
+make "sz read
+if :sz=1 then make "sz2 :21c
+if :sz=2 then make "sz2 :22c
+if :sz=3 then make "sz2 :23c 
+(pr "请选择 :3d "：选择（1）、（2）、（3）)
+make "sz read
+if :sz=1 then make "sz3 :31c
+if :sz=2 then make "sz3 :32c
+if :sz=3 then make "sz3 :33c 
+(pr "请选择 :4d "：选择（1）、（2）、（3）)
+make "sz read
+if :sz=1 then make "sz4 :41c
+if :sz=2 then make "sz4 :42c
+if :sz=3 then make "sz4 :43c
+(pr :sz1:sz2:sz3:sz4)
+end
+
+to jx :1d :11c :12c :13c :2d :21c :22c :23c :3d :31c :32c :33c :4d :41c :42c :43c
+make "sz1 random 3
+make "sz2 random 3
+make "sz3 random 3
+make "sz4 random 3
+if :sz1=1 then make "sz1 :11c
+if :sz1=2 then make "sz1 :12c
+if :sz1=3 then make "sz1 :13c 
+if :sz2=1 then make "sz2 :21c
+if :sz2=2 then make "sz2 :22c
+if :sz2=3 then make "sz2 :23c 
+if :sz3=1 then make "sz3 :31c
+if :sz3=2 then make "sz3 :32c
+if :sz3=3 then make "sz3 :33c 
+if :sz4=1 then make "sz4 :41c
+if :sz4=2 then make "sz4 :42c
+if :sz4=3 then make "sz4 :43c
+(pr :sz1:sz2:sz3:sz4)
+end

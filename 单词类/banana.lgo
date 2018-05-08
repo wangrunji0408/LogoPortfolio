@@ -1,0 +1,44 @@
+to banana
+pd
+fd 160 lt 90 fd 20 repeat 12 [fd 10 lt 360/24] fd 30
+pu
+ bk 120
+pd
+repeat 24 [bk 10 rt 360/24]
+pu
+repeat 6 [bk 10 rt 360/24] bk 10
+pd
+repeat 6 [bk 7 lt 360/24]
+pu
+rt 90 fd 80 rt 90
+pd
+repeat 6 [fd 5 rt 360/24] fd 70
+pu
+bk 60
+pd
+repeat 12 [bk 7 rt 360/24] bk 45 repeat 6 [bk 5 lt 360/24]
+pu
+bk 50 rt 90 fd 80 rt 90
+pd
+repeat 24 [fd 10 rt 360/24]
+pu
+repeat 6 [fd 10 rt 360/24] fd 10
+pd
+repeat 6 [fd 7 lt 360/24]
+pu
+lt 90 fd 80 rt 90
+pd
+repeat 6 [fd 5 rt 360/24] fd 70
+pu
+bk 60
+pd
+repeat 12 [bk 7 rt 360/24] bk 45 repeat 6 [bk 5 lt 360/24]
+pu
+bk 50 rt 90 fd 80 rt 90
+pd
+repeat 24 [fd 10 rt 360/24]
+pu
+repeat 6 [fd 10 rt 360/24] fd 10
+pd
+repeat 6 [fd 7 lt 360/24]
+end

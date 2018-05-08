@@ -1,0 +1,29 @@
+to xue
+rt 45
+pd
+fd 20
+pu
+bk 20 lt 45 fd 20 rt 45
+pd
+fd 20
+pu
+bk 20 lt 45 fd 40 rt 135
+pd
+fd 20
+pu
+bk 20 rt 45 fd 80 lt 90 fd 20 lt 45
+pd
+fd 20
+pu
+bk 20 lt 45
+pd
+fd 90 rt 135 fd 20
+pu
+bk 20 rt 45 fd 70 lt 90 fd 10 lt 90
+pd
+fd 50 rt 135 fd 30 lt 45 fd 50 rt 135 fd 10
+pu
+bk 10 rt 45 fd 40 lt 90 fd 50
+pd
+bk 100
+end

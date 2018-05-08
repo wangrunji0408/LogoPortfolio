@@ -1,0 +1,17 @@
+to dou
+rt 45
+pd
+fd 50
+pu
+bk 50 rt 45 fd 50 lt 45
+pd
+fd 50
+pu
+rt 45 fd 20 rt 90 fd 50
+pd
+bk 150
+pu
+fd 75 rt 90 fd 120
+pd
+bk 200
+end

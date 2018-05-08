@@ -1,0 +1,24 @@
+to huan :a
+pd
+setw 2
+setpc :a
+repeat 24 [fd 10 rt 360/24]
+end
+
+to wuhuan
+pu
+fd 50 lt 90 fd 50 rt 180
+huan 9
+pu
+fd 50
+huan 0
+pu
+fd 50
+huan 12
+pu
+fd 20 rt 90 fd 90
+huan 2
+pu
+fd 10 rt 90 fd 130 rt 90
+huan 14
+end

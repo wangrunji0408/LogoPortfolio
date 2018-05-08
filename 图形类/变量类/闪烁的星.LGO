@@ -1,0 +1,20 @@
+to swbx :a
+repeat 5 [repeat 4 [fd :a rt 360/4]rt 360/5]
+end
+
+to star :n
+swbx :n*2 swbx :n*3 swbx :n*4 swbx :n*5 swbx :n*6 swbx :n*7 swbx :n*8 swbx :n*9 swbx :n*10
+end
+
+to cfx
+draw
+pd
+make "color random 14
+make "seth random 360
+make "n random 5
+setpc :color
+seth :seth
+star :n
+wait 100
+cfx 
+end

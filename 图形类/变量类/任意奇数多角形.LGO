@@ -1,0 +1,8 @@
+to djx
+(pr "请输入角的边长)
+make "b read
+(pr "请输入角的数量（奇数）)
+make "s read
+pd
+repeat :s [fd :b rt 180-180/:s]
+end
