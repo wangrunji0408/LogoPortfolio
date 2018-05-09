@@ -5,17 +5,17 @@ szdy :c :k :z :v :x :color :t
 end
 
 to szdy :c :k :z :v :x :color :t
-ask 1 [pu rt 90 bk 125 pd tt [ÊýÁ¿ÐÅÏ¢£º] pu fd 75 pd tt (:x) pu fd 50 pd tt [KB] pu fd 20 pd tt [/] pu fd 5 pd tt (:z) pu fd 50 pd tt [KB]]
-ask 2 [pu bk 20 rt 90 bk 125 pd tt [Íê³É¶È£º] pu fd 60 pd tt (:x/:z*100) pu fd 50 pd tt [%] pu fd 30 pd tt [Ê£Óà¶È£º] pu fd 75 pd tt (100-(:x/:z*100)) pu fd 50 pd tt [%]]
-ask 3 [pu bk 40 rt 90 bk 125 pd tt [ÏÂÔØËÙ¶È£º] pu fd 75 pd tt (:v) pu fd 50 pd tt [kb/Ãë]]
-ask 4 [pu bk 60 rt 90 bk 125 pd tt [ÒÑÓÃÊ±¼ä£º] pu fd 75 pd tt (:t) pu fd 50 pd tt [Ãë] pu fd 30 pd tt [Ê£ÓàÊ±¼ä£º] pu fd 75 pd tt (:z/:v-:t) pu fd 50 pd tt [Ãë]]
+ask 1 [pu rt 90 bk 125 pd tt [æ•°é‡ä¿¡æ¯ï¼š] pu fd 75 pd tt (:x) pu fd 50 pd tt [KB] pu fd 20 pd tt [/] pu fd 5 pd tt (:z) pu fd 50 pd tt [KB]]
+ask 2 [pu bk 20 rt 90 bk 125 pd tt [å®Œæˆåº¦ï¼š] pu fd 60 pd tt (:x/:z*100) pu fd 50 pd tt [%] pu fd 30 pd tt [å‰©ä½™åº¦ï¼š] pu fd 75 pd tt (100-(:x/:z*100)) pu fd 50 pd tt [%]]
+ask 3 [pu bk 40 rt 90 bk 125 pd tt [ä¸‹è½½é€Ÿåº¦ï¼š] pu fd 75 pd tt (:v) pu fd 50 pd tt [kb/ç§’]]
+ask 4 [pu bk 60 rt 90 bk 125 pd tt [å·²ç”¨æ—¶é—´ï¼š] pu fd 75 pd tt (:t) pu fd 50 pd tt [ç§’] pu fd 30 pd tt [å‰©ä½™æ—¶é—´ï¼š] pu fd 75 pd tt (:z/:v-:t) pu fd 50 pd tt [ç§’]]
 jindu :c :k :z :v :x :color :t
 end
 
 to jindu :c :k :z :v :x :color :t
 ask 0 [setpc :color pd repeat 2 [fd (:x/:z*:c) pd repeat 180 [rt 1 fd (:k*pi/180)]] pu rt 90 fd (:k/2) pd fill]
 wait 100 make "t (:t+1)
-if :x>(:z-1) [(pr "ÏÂÔØÍê³É£¡£¡£¡) ask 5 [pu bk 100 rt 90 bk 150 pd setfont "times 30 1 tt [ÏÂÔØÍê³É£¡£¡£¡]] ask 6 [pu bk 80 rt 90 bk 50 pd setfont "times 10 0 tt [Æ½¾ùËÙ¶È£º] pu fd 75 pd tt (:z/:t) pu fd 50 pd tt [KB/Ãë]]stop]
+if :x>(:z-1) [(pr "ä¸‹è½½å®Œæˆï¼ï¼ï¼) ask 5 [pu bk 100 rt 90 bk 150 pd setfont "times 30 1 tt [ä¸‹è½½å®Œæˆï¼ï¼ï¼]] ask 6 [pu bk 80 rt 90 bk 50 pd setfont "times 10 0 tt [å¹³å‡é€Ÿåº¦ï¼š] pu fd 75 pd tt (:z/:t) pu fd 50 pd tt [KB/ç§’]]stop]
 szgb :c :k :z :v :x :color :t
 end
 
@@ -28,22 +28,22 @@ kuang :c :k :z :v :x :color :t
 end
 
 to jdt
-(pr "ÏÖÔÚ¿ªÊ¼Ö÷ÒªÊý¾ÝÌîÐ´Ïòµ¼¡£)
+(pr "çŽ°åœ¨å¼€å§‹ä¸»è¦æ•°æ®å¡«å†™å‘å¯¼ã€‚)
 wait 100
-(pr "ÇëÊäÈëÏÂÔØÎÄ¼þµÄ×Ü´óÐ¡£¨KB£©¡£)
+(pr "è¯·è¾“å…¥ä¸‹è½½æ–‡ä»¶çš„æ€»å¤§å°ï¼ˆKBï¼‰ã€‚)
 make "z read
-(pr "Çë¸ù¾ÝËÙ¶ÈÇé¿öÌîÐ´Æ½¾ùËÙ¶È£¨KB£©¡£)
+(pr "è¯·æ ¹æ®é€Ÿåº¦æƒ…å†µå¡«å†™å¹³å‡é€Ÿåº¦ï¼ˆKBï¼‰ã€‚)
 make "v read
-(pr "ÏÖÔÚ¿ªÊ¼¸öÐÔÉèÖÃÏòµ¼¡£)
+(pr "çŽ°åœ¨å¼€å§‹ä¸ªæ€§è®¾ç½®å‘å¯¼ã€‚)
 wait 100
-(pr "ÇëÊäÈë½ø¶ÈÌõµÄ³¤¡£)
+(pr "è¯·è¾“å…¥è¿›åº¦æ¡çš„é•¿ã€‚)
 make "c read
-(pr "ÇëÊäÈë½ø¶ÈÌõµÄ¿í¡£)
+(pr "è¯·è¾“å…¥è¿›åº¦æ¡çš„å®½ã€‚)
 make "k read
-(pr "ÇëÑ¡Ôñ½ø¶ÈÌõÑÕÉ«´úÂë£¬²ÎÕÕÈçÏÂ£º)
-(pr "0ºÚ¡¢1ÉîÀ¶¡¢2ÉîÂÌ¡¢3°µÀ¶¡¢4×Ø¡¢5×Ï¡¢6ÍÁ»Æ¡¢7Ç³»Ò¡¢8Éî»Ò¡¢9À¶¡¢10ÂÌ¡¢11ÌìÀ¶¡¢12ºì¡¢13·Û¡¢14»Æ¡¢15°×¡£)
+(pr "è¯·é€‰æ‹©è¿›åº¦æ¡é¢œè‰²ä»£ç ï¼Œå‚ç…§å¦‚ä¸‹ï¼š)
+(pr "0é»‘ã€1æ·±è“ã€2æ·±ç»¿ã€3æš—è“ã€4æ£•ã€5ç´«ã€6åœŸé»„ã€7æµ…ç°ã€8æ·±ç°ã€9è“ã€10ç»¿ã€11å¤©è“ã€12çº¢ã€13ç²‰ã€14é»„ã€15ç™½ã€‚)
 make "color read
-(pr "ÉèÖÃÍê³É£¬ÏÖÔÚ¿ªÊ¼¡£)
+(pr "è®¾ç½®å®Œæˆï¼ŒçŽ°åœ¨å¼€å§‹ã€‚)
 wait 200
 make "t 0
 make "x 0

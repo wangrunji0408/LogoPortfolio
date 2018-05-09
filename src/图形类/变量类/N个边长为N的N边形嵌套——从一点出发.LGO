@@ -1,11 +1,11 @@
 to dbx
-(pr "请输入形状的边数)
+(pr "璇疯緭鍏ュ舰鐘剁殑杈规暟)
 make "b read
-(pr "请输入第一个形状的边长)
+(pr "璇疯緭鍏ョ涓�涓舰鐘剁殑杈归暱)
 make "a read
-(pr "请输入形状的数量)
+(pr "璇疯緭鍏ュ舰鐘剁殑鏁伴噺)
 make "n read
-(pr "请输入每两个相邻形状的边长差)
+(pr "璇疯緭鍏ユ瘡涓や釜鐩搁偦褰㈢姸鐨勮竟闀垮樊)
 make "c read
 make "xn 0
 hua :b :a :n :c :xn

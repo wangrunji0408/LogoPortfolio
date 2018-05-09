@@ -1,33 +1,33 @@
 to ysxp
 make "begindate date
 make "begintime time
-(pr "ÒûÊ³µØµãÃû³Æ)
+(pr "é¥®é£Ÿåœ°ç‚¹åç§°)
 make "mc read
-(pr "²Í×ÀºÅ)
+(pr "é¤æ¡Œå·)
 make "czh read
-(pr "ÊÕ¿îÔ±±àºÅ)
+(pr "æ”¶æ¬¾å‘˜ç¼–å·)
 make "sky read
-(pr "ÈËÊı)
+(pr "äººæ•°)
 make "rs read
-(pr "ÏÖÔÚ¿ªÊ¼½ø²Í£¨¼ÆÊ±£©)
+(pr "ç°åœ¨å¼€å§‹è¿›é¤ï¼ˆè®¡æ—¶ï¼‰)
 eatwait
 end
 
 to eatwait
 wait 1
-if read="Í£Ö¹ then (make "enddate date) (make "endtime time)
-if read="¼ÌĞøÉèÖÃ then jqxx :mc :czh :sky :rs :begintime :begindate :endtime :enddate
+if read="åœæ­¢ then (make "enddate date) (make "endtime time)
+if read="ç»§ç»­è®¾ç½® then jqxx :mc :czh :sky :rs :begintime :begindate :endtime :enddate
 eatwait
 end
 
 to jqxx :mc :czh :sky :rs :begintime :begindate :endtime :enddate
-(pr "ÕÛ¿Û£¨%£¬°Ù·Ö°ÙÎª²»ÕÛ¿Û£©)
+(pr "æŠ˜æ‰£ï¼ˆ%ï¼Œç™¾åˆ†ç™¾ä¸ºä¸æŠ˜æ‰£ï¼‰)
 make "zhe read/100
-(pr "¼õ¼Û£¨ÒÔÔªÎªµ¥Î»£©)
+(pr "å‡ä»·ï¼ˆä»¥å…ƒä¸ºå•ä½ï¼‰)
 make "jian read
-(pr "ÊÇ·ñÓĞÏû·Ñ¿¨)
-if read="y then (pr "Ïû·Ñ¿¨ÕÛ¿Û¸ÅÂÊ£¨%£¬100%Îª²»ÕÛ¿Û£©) make "zhe :zhe*(read/100)
-(pr "»ù±¾Çé¿öÉèÖÃÍê±Ï,5Ãëºó¿ªÊ¼´òÓ¡Ğ¡Æ±)
+(pr "æ˜¯å¦æœ‰æ¶ˆè´¹å¡)
+if read="y then (pr "æ¶ˆè´¹å¡æŠ˜æ‰£æ¦‚ç‡ï¼ˆ%ï¼Œ100%ä¸ºä¸æŠ˜æ‰£ï¼‰) make "zhe :zhe*(read/100)
+(pr "åŸºæœ¬æƒ…å†µè®¾ç½®å®Œæ¯•,5ç§’åå¼€å§‹æ‰“å°å°ç¥¨)
 wait 500
 xiaopiao :mc :czh :sky :rs :zhe :jian :begintime :begindate :endtime :enddate
 end
@@ -46,12 +46,12 @@ pu
 bk 20 rt 90 fd 80
 pd
 setfont "TIMES 10 2
-tt [»¶Ó­ÄúµÄµ½À´£¡]
+tt [æ¬¢è¿æ‚¨çš„åˆ°æ¥ï¼]
 pu
 bk 80 lt 90 bk 20
 pd
 setfont "TIMES 8 0
-tt [×ùÎ»ºÅ£º]
+tt [åº§ä½å·ï¼š]
 pu
 rt 90 fd 40
 pd
@@ -61,7 +61,7 @@ pu
 fd 30
 pd
 setfont "TIMES 8 0
-tt [ÊÕ¿îÔ±£º]
+tt [æ”¶æ¬¾å‘˜ï¼š]
 pu
 fd 40
 pd
@@ -71,7 +71,7 @@ pu
 fd 30
 pd
 setfont "TIMES 8 0
-tt [ÓÃ²ÍÈËÊı£º]
+tt [ç”¨é¤äººæ•°ï¼š]
 pu
 fd 50
 pd
@@ -81,7 +81,7 @@ pu
 bk 190 lt 90 bk 20
 pd
 setfont "TIMES 8 0
-tt [¿ªÊ¼Ê±¼ä£º]
+tt [å¼€å§‹æ—¶é—´ï¼š]
 pu
 rt 90 fd 50
 pd
@@ -95,7 +95,7 @@ pu
 bk 130 lt 90 bk 20
 pd
 setfont "TIMES 8 0
-tt [½áÊøÊ±¼ä£º]
+tt [ç»“æŸæ—¶é—´ï¼š]
 pu
 rt 90 fd 50
 pd
@@ -113,37 +113,37 @@ pu
 bk 260 rt 90 fd 5 lt 90 fd 20
 pd
 setfont "TIMES 8 0
-tt [Ãû³Æ]
+tt [åç§°]
 pu
 fd 50
 pd
-tt [¹æ¸ñ]
+tt [è§„æ ¼]
 pu
 fd 30
 pd
-tt [ÊıÁ¿]
+tt [æ•°é‡]
 pu
 fd 50
 pd
-tt [µ¥¼Û]
+tt [å•ä»·]
 pu
 fd 50 
 pd
-tt [Ğ¡¼Æ]
+tt [å°è®¡]
 pu
 bk 200 lt 90 bk 20 rt 90
 jincan 1 :zhe :jian
 end
 
 to jincan :caishu :zhe :jian
-if :caishu>10 then (pr "Çë»»ÏÂÒ»ÕÅĞ¡Æ±´òÓ¡)
-(pr "ÇëÊäÈëµÚ :caishu "µÀ²ËµÄĞÅÏ¢£¨Ãû³Æ£©)
+if :caishu>10 then (pr "è¯·æ¢ä¸‹ä¸€å¼ å°ç¥¨æ‰“å°)
+(pr "è¯·è¾“å…¥ç¬¬ :caishu "é“èœçš„ä¿¡æ¯ï¼ˆåç§°ï¼‰)
 make "mc read
-(pr "ÇëÊäÈëµÚ :caishu "µÀ²ËµÄĞÅÏ¢£¨¹æ¸ñ£©)
+(pr "è¯·è¾“å…¥ç¬¬ :caishu "é“èœçš„ä¿¡æ¯ï¼ˆè§„æ ¼ï¼‰)
 make "gg read
-(pr "ÇëÊäÈëµÚ :caishu "µÀ²ËµÄĞÅÏ¢£¨ÊıÁ¿£©)
+(pr "è¯·è¾“å…¥ç¬¬ :caishu "é“èœçš„ä¿¡æ¯ï¼ˆæ•°é‡ï¼‰)
 make "sl read
-(pr "ÇëÊäÈëµÚ :caishu "µÀ²ËµÄĞÅÏ¢£¨µ¥¼Û£©)
+(pr "è¯·è¾“å…¥ç¬¬ :caishu "é“èœçš„ä¿¡æ¯ï¼ˆå•ä»·ï¼‰)
 make "dj read
 make "xj :dj*:sl
 pd
@@ -170,7 +170,7 @@ bk 200 lt 90 bk 20 rt 90
 if :caishu=1 then make "zj :xj
 if :caishu>1 then make "zj (:zj+:xj)
 make "jczt read
-if :jczt="Íê±Ï then xinxi :zj :zhe :jian
+if :jczt="å®Œæ¯• then xinxi :zj :zhe :jian
 make "caishu (:caishu+1)
 jincan :caishu :zhe :jian
 end
@@ -184,28 +184,28 @@ pu
 bk 260 rt 90 fd 10 lt 90
 pd
 setfont "TIMES 8 0
-tt [×Ü¼Û£¨²»º¬ÓÅ»İ£©£º]
+tt [æ€»ä»·ï¼ˆä¸å«ä¼˜æƒ ï¼‰ï¼š]
 pu
 fd 90
 pd
 setfont "TIMES 10 1
-tt (:zj "Ôª)
+tt (:zj "å…ƒ)
 pu
 bk 90 rt 90 fd 20 lt 90
 pd
 setfont "TIMES 8 0
-tt [Ó¦¸¶½ğ¶î£¨º¬ÓÅ»İ£©£º]
+tt [åº”ä»˜é‡‘é¢ï¼ˆå«ä¼˜æƒ ï¼‰ï¼š]
 pu
 fd 100
 pd
 make "yf :zj*:zhe-:jian
 setfont "TIMES 10 1
-tt (:yf "Ôª)
+tt (:yf "å…ƒ)
 pu
 bk 100 rt 90 fd 20 lt 90
 pd
 setfont "TIMES 8 0
-tt [¸¶¿î½ğ¶î£º]
+tt [ä»˜æ¬¾é‡‘é¢ï¼š]
 pu
 fd 50
 pd
@@ -216,10 +216,10 @@ pu
 bk 50 rt 90 fd 20 lt 90
 pd
 setfont "TIMES 8 0
-tt [ÏÖ½ğÕÒÁã£º]
+tt [ç°é‡‘æ‰¾é›¶ï¼š]
 pu
 fd 50
 pd
 setfont "TIMES 10 1
-tt (:fq-:yf "Ôª)
+tt (:fq-:yf "å…ƒ)
 end

@@ -1,14 +1,14 @@
 to hu
-(pr "ÇëÊäÈë»¡µÄ¶ÈÊı)
+(pr "è¯·è¾“å…¥å¼§çš„åº¦æ•°)
 make "d read
-(pr "ÇëÊäÈë»¡¾àÀëÔ²ĞÄµÄ¾àÀë)
+(pr "è¯·è¾“å…¥å¼§è·ç¦»åœ†å¿ƒçš„è·ç¦»)
 make "r read
-(pr "ÇëÊäÈë»¡¿ªÊ¼Ê±µÄ·½Ïò¶ÈÊı)
+(pr "è¯·è¾“å…¥å¼§å¼€å§‹æ—¶çš„æ–¹å‘åº¦æ•°)
 make "seth read
 pd
 ask 0 [ht setpc 12 (stampoval 2 2 "true)]
 ask 1 [seth :seth setpc 7 fd :r]
 ask 2 [seth (:seth+:d) setpc 7 fd :r]
 ask 3 [pu seth :seth fd :r rt 90 pd repeat :d [fd 2*:r*pi/360 rt 1]]
-ask 4 [seth :seth tt (:d ¡ã)]
+ask 4 [seth :seth tt (:d Â°)]
 end

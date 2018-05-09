@@ -1,9 +1,9 @@
 to gq
-(pr "请输入最大光圈的半径)
+(pr "璇疯緭鍏ユ渶澶у厜鍦堢殑鍗婂緞)
 make "r read
-(pr "请输入最小光圈的半径)
+(pr "璇疯緭鍏ユ渶灏忓厜鍦堢殑鍗婂緞)
 make "xr read
-(pr "请输入相邻两个光圈间的半径差)
+(pr "璇疯緭鍏ョ浉閭讳袱涓厜鍦堥棿鐨勫崐寰勫樊)
 make "c read
 pu
 lt 90 fd :xr rt 90

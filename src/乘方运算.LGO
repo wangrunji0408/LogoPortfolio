@@ -1,5 +1,5 @@
 to chengfang :cfs :cfc
 make "cfjg 1
 repeat :cfc [make "cfjg (:cfjg*:cfs)]
-(pr "½á¹ûÊÇ :cfjg)
+(pr "ç»“æžœæ˜¯ :cfjg)
 end

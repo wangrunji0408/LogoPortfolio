@@ -9,13 +9,13 @@ repeat :c [pd wjx :b pu fd (:j+:b)]
 end
 
 to hua
-(pr "ÇëÊäÈë²ãÊı)
+(pr "è¯·è¾“å…¥å±‚æ•°)
 make "c read
-(pr "ÇëÊäÈë·ÖÖ§Êı)
+(pr "è¯·è¾“å…¥åˆ†æ”¯æ•°)
 make "f read
-(pr "ÇëÊäÈë²ã¼äµÄ¾àÀë)
+(pr "è¯·è¾“å…¥å±‚é—´çš„è·ç¦»)
 make "j read
-(pr "ÇëÊäÈëÎå½ÇĞÇµÄ±ß³¤)
+(pr "è¯·è¾“å…¥äº”è§’æ˜Ÿçš„è¾¹é•¿)
 make "b read
 repeat :f [fz :c :b :j bk :c*(:j+:b)+:b rt 360/:f]
 end

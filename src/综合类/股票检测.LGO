@@ -14,9 +14,9 @@ repeat 5 [pd tt (:zj*:c) pu fd 50 make "c (:c+1)]
 end
 
 to gp
-(pr "请输入购买股票的只数)
+(pr "璇疯緭鍏ヨ喘涔拌偂绁ㄧ殑鍙暟)
 make "z read
-(pr "请输入购买股票的原价)
+(pr "璇疯緭鍏ヨ喘涔拌偂绁ㄧ殑鍘熶环)
 make "d read
 make "zj (:z*:d)
 kuang :zj
